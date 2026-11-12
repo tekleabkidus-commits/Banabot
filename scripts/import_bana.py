@@ -28,7 +28,12 @@ replacements=[
 ]
 def brand(content):
     for old,new in replacements:
-        content=re.sub(old,lambda _:new,content)
+        def replace_case(match):
+            source=match.group(0)
+            if source.isupper(): return new.upper()
+            if source.islower(): return new.lower()
+            return new
+        content=re.sub(old,replace_case,content)
     return content
 
 # Rename paths from deepest first. Separate slug and class aliases to avoid broken filesystem links.
