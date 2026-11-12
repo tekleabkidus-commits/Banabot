@@ -1,36 +1,36 @@
-/* Bana's distinct visual identity: royal-violet, lavender, ink. Loaded after workspace styles. */
+/* Bana Bot visual identity: midnight navy, electric aqua and teal. Loaded after workspace styles. */
 :root {
- --bana-primary:#6d28d9; --bana-primary-hover:#5b21b6; --bana-primary-active:#4c1d95;
- --bana-accent:#a855f7; --bana-light:#f3e8ff; --bana-surface:#faf8ff;
- --bana-ink:#231338; --bana-border:#e9def7;
- --kb-green:#6d28d9; --kb-bg:#faf8ff; --kb-ink:#231338; --kb-border:#e9def7; --kb-muted:#716783;
- --ks-forest:#5b21b6; --ks-deep:#4c1d95; --ks-primary:#6d28d9; --ks-primary-hover:#5b21b6;
- --ks-mint:#f3e8ff; --ks-mint-strong:#e9d5ff; --ks-ink:#231338; --ks-muted:#716783;
- --ks-canvas:#faf8ff; --ks-border:#e9def7; --ks-soft-border:#f1e9fa; --ks-focus:#a78bfa;
- --studio-green:#6d28d9; --studio-green-dark:#5b21b6; --studio-green-soft:#f3e8ff;
- --studio-ink:#231338; --studio-bg:#faf8ff; --studio-line:#e9def7;
- --kc-green:#6d28d9; --kc-mint:#f3e8ff; --kc-line:#e9def7; --kc-text:#231338; --kc-sub:#716783;
+ --bana-primary:#008F91; --bana-primary-hover:#006D75; --bana-primary-active:#084A58;
+ --bana-accent:#30D6C9; --bana-light:#E3FAF6; --bana-surface:#F3FAFA;
+ --bana-ink:#122D3A; --bana-border:#D1EAE8;
+ --kb-green:#008F91; --kb-bg:#F3FAFA; --kb-ink:#122D3A; --kb-border:#D1EAE8; --kb-muted:#57737C;
+ --ks-forest:#006D75; --ks-deep:#084A58; --ks-primary:#008F91; --ks-primary-hover:#006D75;
+ --ks-mint:#E3FAF6; --ks-mint-strong:#CAF2EB; --ks-ink:#122D3A; --ks-muted:#57737C;
+ --ks-canvas:#F3FAFA; --ks-border:#D1EAE8; --ks-soft-border:#f1e9fa; --ks-focus:#69DED4;
+ --studio-green:#008F91; --studio-green-dark:#006D75; --studio-green-soft:#E3FAF6;
+ --studio-ink:#122D3A; --studio-bg:#F3FAFA; --studio-line:#D1EAE8;
+ --kc-green:#008F91; --kc-mint:#E3FAF6; --kc-line:#D1EAE8; --kc-text:#122D3A; --kc-sub:#57737C;
 }
-body.fi-body {background:#faf8ff !important; color:#231338 !important}
-.fi-sidebar {background:#fff !important; border-right-color:#e9def7 !important}
-.fi-sidebar-header {border-color:#e9def7 !important}
-.fi-topbar nav {background:#fff !important; border-color:#e9def7 !important}
-.fi-sidebar-item.fi-active .fi-sidebar-item-button{background:#f3e8ff !important;box-shadow:inset 3px 0 0 #6d28d9 !important}
-.fi-sidebar-item.fi-active .fi-sidebar-item-label,.fi-sidebar-item.fi-active .fi-sidebar-item-icon{color:#5b21b6 !important}
-.fi-sidebar-item-button:hover {background:#f5f0ff !important}
-.fi-btn-color-primary,.fi-btn.fi-color-primary,.kb-button,.ks-action-primary,.kb-chat-send{background:#6d28d9 !important;color:#fff !important}
-.fi-btn-color-primary:hover,.fi-btn.fi-color-primary:hover,.kb-button:hover,.ks-action-primary:hover,.kb-chat-send:hover{background:#5b21b6 !important}
-.fi-input:focus,.fi-input-wrp:focus-within,textarea:focus,input:focus{--tw-ring-color:#a78bfa}
-.fi-tabs-item.fi-active,.fi-tabs-item[aria-selected="true"]{color:#6d28d9 !important}
-::selection{background:#e9d5ff;color:#3b0764}
-.kb-logo>span {background:linear-gradient(140deg,#7c3aed,#4c1d95);color:#fff;font-weight:900;box-shadow:0 6px 14px #6d28d92b}
-.kb-logo small{color:#7a7190}
-.studio-dashboard-card,.fi-section,.fi-ta{border-color:#e9def7 !important}
-.studio-legend-green{background:#7c3aed !important}
-.studio-tag.green{color:#5b21b6 !important;background:#f3e8ff !important}
-.studio-action-icon.green{background:#ede2ff !important;color:#6d28d9 !important}
-.kb-inbox-layout,.kb-profile-layout{--kc-green:#6d28d9;--kc-mint:#f3e8ff;--kc-line:#e9def7}
-.kb-outgoing .kb-chat-bubble{background:#eee5ff !important;color:#32195a}
-.kb-chat-contact.is-selected{background:#f1e8ff !important}
-.kb-chat-contact-avatar,.kb-chat-avatar{background:#e9d5ff;color:#5b21b6}
-.kb-chat-contact-avatar:hover{background:#ddd0fb}
+body.fi-body {background:#F3FAFA !important; color:#122D3A !important}
+.fi-sidebar {background:#fff !important; border-right-color:#D1EAE8 !important}
+.fi-sidebar-header {border-color:#D1EAE8 !important}
+.fi-topbar nav {background:#fff !important; border-color:#D1EAE8 !important}
+.fi-sidebar-item.fi-active .fi-sidebar-item-button{background:#E3FAF6 !important;box-shadow:inset 3px 0 0 #008F91 !important}
+.fi-sidebar-item.fi-active .fi-sidebar-item-label,.fi-sidebar-item.fi-active .fi-sidebar-item-icon{color:#006D75 !important}
+.fi-sidebar-item-button:hover {background:#E9F9F6 !important}
+.fi-btn-color-primary,.fi-btn.fi-color-primary,.kb-button,.ks-action-primary,.kb-chat-send{background:#008F91 !important;color:#fff !important}
+.fi-btn-color-primary:hover,.fi-btn.fi-color-primary:hover,.kb-button:hover,.ks-action-primary:hover,.kb-chat-send:hover{background:#006D75 !important}
+.fi-input:focus,.fi-input-wrp:focus-within,textarea:focus,input:focus{--tw-ring-color:#69DED4}
+.fi-tabs-item.fi-active,.fi-tabs-item[aria-selected="true"]{color:#008F91 !important}
+::selection{background:#CAF2EB;color:#083B4A}
+.kb-logo>span {background:linear-gradient(140deg,#00B7B4,#084A58);color:#fff;font-weight:900;box-shadow:0 6px 14px #008F912b}
+.kb-logo small{color:#57737C}
+.studio-dashboard-card,.fi-section,.fi-ta{border-color:#D1EAE8 !important}
+.studio-legend-green{background:#00B7B4 !important}
+.studio-tag.green{color:#006D75 !important;background:#E3FAF6 !important}
+.studio-action-icon.green{background:#DCF8F4 !important;color:#008F91 !important}
+.kb-inbox-layout,.kb-profile-layout{--kc-green:#008F91;--kc-mint:#E3FAF6;--kc-line:#D1EAE8}
+.kb-outgoing .kb-chat-bubble{background:#E0F7F3 !important;color:#123C4B}
+.kb-chat-contact.is-selected{background:#E2F8F4 !important}
+.kb-chat-contact-avatar,.kb-chat-avatar{background:#CAF2EB;color:#006D75}
+.kb-chat-contact-avatar:hover{background:#B9EEE8}

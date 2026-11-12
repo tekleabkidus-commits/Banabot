@@ -1,0 +1,19 @@
+/* Bana Bot global identity: loaded last after all original layout styles. */
+:root{--bana-navy:#092F3F;--bana-dark:#062631;--bana-primary:#008F91;--bana-hover:#006D75;--bana-aqua:#00B7B4;--bana-copper:#E88645;--bana-canvas:#F3FAFA;--bana-border:#D1EAE8;--bana-ink:#122D3A;--ks-primary:#008F91;--ks-primary-hover:#006D75;--ks-forest:#092F3F;--ks-deep:#062631;--ks-mint:#E3FAF6;--ks-ink:#122D3A;--ks-canvas:#F3FAFA;--ks-border:#D1EAE8;--ks-focus:#00B7B4;--kb-green:#008F91;--kb-bg:#F3FAFA;--kb-ink:#122D3A;--studio-green:#008F91;--studio-green-dark:#006D75;--studio-green-soft:#E3FAF6;--studio-ink:#122D3A;--studio-bg:#F3FAFA;--kc-green:#008F91;--kc-mint:#E3FAF6;--kc-text:#122D3A}
+body.fi-body{background:#F3FAFA!important;color:#122D3A!important}
+.fi-sidebar,.fi-sidebar-header{background:#092F3F!important;border-color:#0D4553!important}
+.fi-sidebar-item-label,.fi-sidebar-group-label{color:#B3D8D9!important}
+.fi-sidebar-item-icon{color:#9EC9CC!important}
+.fi-sidebar-item-button:hover{background:#174E5C!important}
+.fi-sidebar-item.fi-active .fi-sidebar-item-button{background:#006D75!important;box-shadow:inset 3px 0 #E88645!important}
+.fi-sidebar-item.fi-active .fi-sidebar-item-label,.fi-sidebar-item.fi-active .fi-sidebar-item-icon{color:#FFFFFF!important}
+.fi-topbar nav{background:#FFFFFF!important;border-color:#D1EAE8!important}
+.fi-btn-color-primary,.fi-btn.fi-color-primary,.kb-button,.ks-action-primary,.kb-chat-send{background:#008F91!important;color:#FFF!important}
+.fi-btn-color-primary:hover,.fi-btn.fi-color-primary:hover,.kb-button:hover,.ks-action-primary:hover,.kb-chat-send:hover{background:#006D75!important}
+.fi-tabs-item.fi-active,.fi-tabs-item[aria-selected=true]{color:#008F91!important}
+.fi-input-wrp:focus-within{border-color:#00B7B4!important;box-shadow:0 0 0 3px #00B7B426!important}
+.kb-logo>span{background:linear-gradient(135deg,#008F91,#092F3F)!important;color:#FFF!important}
+.studio-dashboard-card,.fi-section,.fi-ta{border-color:#D1EAE8!important}
+.kb-chat-contact.is-selected,.kb-outgoing .kb-chat-bubble{background:#DFF8F4!important;color:#092F3F!important}
+.studio-tag.green,.studio-action-icon.green{color:#006D75!important;background:#DFF8F4!important}
+::selection{background:#B3EFE7;color:#092F3F}

@@ -1,6 +1,6 @@
 /* Bana Rewards Studio v2 — independently loaded CSS (no Tailwind build dependency).
    Intentionally scoped to .ly-rewards so existing pages stay untouched. */
-.ly-rewards{--ly-ink:#201735;--ly-muted:#797189;--ly-line:#eae5f1;--ly-purple:#6d28d9;--ly-violet:#8b5cf6;--ly-soft:#f5f0ff;--ly-green:#047857;--ly-red:#b42332;--ly-orange:#b76d11;--ly-bg:#fff;display:flex;flex-direction:column;gap:22px;width:100%;max-width:none;min-width:0;color:var(--ly-ink);font-family:Inter,'Instrument Sans',ui-sans-serif,system-ui,-apple-system,sans-serif}
+.ly-rewards{--ly-ink:#201735;--ly-muted:#797189;--ly-line:#eae5f1;--ly-purple:#008F91;--ly-violet:#8b5cf6;--ly-soft:#E9F9F6;--ly-green:#047857;--ly-red:#b42332;--ly-orange:#b76d11;--ly-bg:#fff;display:flex;flex-direction:column;gap:22px;width:100%;max-width:none;min-width:0;color:var(--ly-ink);font-family:Inter,'Instrument Sans',ui-sans-serif,system-ui,-apple-system,sans-serif}
 .ly-rewards *, .ly-rewards *:before,.ly-rewards *:after{box-sizing:border-box}
 .fi-main:has(.ly-rewards) .fi-header{display:none!important}
 .fi-main:has(.ly-rewards) .fi-page-content{padding-top:0!important}
@@ -10,7 +10,7 @@
 .ly-rewards :focus-visible{outline:3px solid #b6a0fa;outline-offset:2px}
 .ly-rewards a{text-decoration:none}
 .ly-rewards .ly-eyebrow{display:flex;align-items:center;gap:8px;font-size:10px;line-height:1.6;text-transform:uppercase;letter-spacing:.19em;font-weight:850;color:#9f79ed}
-.ly-rewards .ly-eyebrow:before{content:'';width:8px;height:8px;background:#a78bfa;border-radius:50%;box-shadow:0 0 0 4px #ffffff20}
+.ly-rewards .ly-eyebrow:before{content:'';width:8px;height:8px;background:#69DED4;border-radius:50%;box-shadow:0 0 0 4px #ffffff20}
 .ly-rewards .ly-hero{position:relative;overflow:hidden;isolation:isolate;border-radius:23px;background:linear-gradient(120deg,#22113c 0%,#48218a 58%,#733ae1 100%);padding:clamp(23px,3vw,36px) clamp(22px,3vw,40px);min-height:164px;display:flex;align-items:center;justify-content:space-between;gap:18px;box-shadow:0 18px 38px #46218f1a;color:#fff}
 .ly-rewards .ly-hero:before{position:absolute;content:'';z-index:-1;width:400px;height:400px;border-radius:50%;right:-130px;top:-260px;border:1px solid #ffffff28;box-shadow:0 0 0 48px #ffffff0a,0 0 0 105px #ffffff09}
 .ly-rewards .ly-hero:after{position:absolute;content:'';z-index:-1;width:160px;height:160px;border-radius:50%;right:19%;bottom:-140px;background:#bf95ff26;filter:blur(22px)}
@@ -21,16 +21,16 @@
 .ly-rewards .ly-nav{display:flex;gap:6px;align-items:center;padding:6px;border:1px solid var(--ly-line);border-radius:15px;background:#fff;overflow-x:auto;scrollbar-width:thin;box-shadow:0 3px 13px #29114308}
 .ly-rewards .ly-nav a{border-radius:10px;display:flex;align-items:center;gap:8px;padding:11px 13px;font-size:12px;font-weight:700;color:#7b728e;white-space:nowrap;transition:.18s}
 .ly-rewards .ly-nav a .ly-nav-dot{width:6px;height:6px;background:#ccc2d7;border-radius:50%;flex:0 0 auto}
-.ly-rewards .ly-nav a:hover{background:#f5f1ff;color:#5b21b6}
+.ly-rewards .ly-nav a:hover{background:#f5f1ff;color:#006D75}
 .ly-rewards .ly-nav a.is-active{color:#5624ac;background:#f0e9ff;box-shadow:inset 0 0 0 1px #e9dcff}
-.ly-rewards .ly-nav a.is-active .ly-nav-dot{background:#7c3aed}
+.ly-rewards .ly-nav a.is-active .ly-nav-dot{background:#00B7B4}
 .ly-rewards .ly-grid{display:grid;gap:15px;min-width:0}.ly-rewards .ly-grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}.ly-rewards .ly-grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.ly-rewards .ly-grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
 .ly-rewards .ly-stat{position:relative;overflow:hidden;min-height:130px;background:#fff;border:1px solid var(--ly-line);border-radius:17px;padding:19px 19px 16px;box-shadow:0 6px 18px #32114708;transition:transform .2s,box-shadow .2s}
 .ly-rewards .ly-stat:hover{transform:translateY(-2px);box-shadow:0 11px 25px #3211470c}
 .ly-rewards .ly-stat small{display:block;font-size:11px;font-weight:700;color:#827a90;letter-spacing:.015em;margin-bottom:14px}
 .ly-rewards .ly-stat strong{display:block;font-size:clamp(20px,2.2vw,29px);color:#25173f;letter-spacing:-.06em;line-height:1.1;font-weight:820;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
 .ly-rewards .ly-stat em{display:block;font-size:10px;font-style:normal;color:#91899e;margin-top:9px}
-.ly-rewards .ly-stat .ly-symbol{position:absolute;right:15px;top:16px;display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#f1eaff;color:#6d28d9;font-size:15px}
+.ly-rewards .ly-stat .ly-symbol{position:absolute;right:15px;top:16px;display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#f1eaff;color:#008F91;font-size:15px}
 .ly-rewards .ly-stat.ly-green .ly-symbol{background:#e6f6ed;color:#048057}.ly-rewards .ly-stat.ly-warm .ly-symbol{background:#fff3df;color:#b96e09}.ly-rewards .ly-stat.ly-blue .ly-symbol{background:#e8f1ff;color:#2369c3}
 .ly-rewards .ly-panel{border:1px solid var(--ly-line);background:#fff;border-radius:18px;min-width:0;overflow:hidden;box-shadow:0 8px 26px #31104908}
 .ly-rewards .ly-panel-body{padding:clamp(16px,2.5vw,25px)}
@@ -43,7 +43,7 @@
 .ly-rewards .ly-hint strong{color:#4c257f}.ly-rewards .ly-hint.ly-success{background:#eefbf5;border-color:#c9eadc;color:#35735b}.ly-rewards .ly-hint.ly-warning{background:#fff9ec;border-color:#f8e4b6;color:#98621b}
 .ly-rewards .ly-action{min-height:38px;display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid #ded5eb;border-radius:10px;background:#fff;color:#655978;padding:9px 14px;font-size:12px;font-weight:750;line-height:1.25;white-space:nowrap;box-shadow:0 1px 2px #250b380b;transition:transform .15s,background .15s,border-color .15s}
 .ly-rewards .ly-action:hover{background:#f8f5ff;border-color:#beabe3;transform:translateY(-1px)}
-.ly-rewards .ly-action.ly-primary{background:#6d28d9;border-color:#6d28d9;color:white;box-shadow:0 3px 8px #6d28d924}
+.ly-rewards .ly-action.ly-primary{background:#008F91;border-color:#008F91;color:white;box-shadow:0 3px 8px #008F9124}
 .ly-rewards .ly-action.ly-primary:hover{background:#5522b5}
 .ly-rewards .ly-action.ly-ghost{border-color:#eae4f1;background:#faf9fc;color:#695b7f}
 .ly-rewards .ly-action.ly-danger{background:#fff1f3;color:#b42332;border-color:#ffd3d9}
@@ -62,7 +62,7 @@
 .ly-rewards .ly-table .ly-right{text-align:right;font-variant-numeric:tabular-nums}.ly-rewards .ly-table .ly-id{font-family:ui-monospace,monospace;font-size:11px;color:#82768f}
 .ly-rewards .ly-table .ly-name{font-size:12px;font-weight:770;color:#2e2045}
 .ly-rewards .ly-table .ly-sub{display:block;font-size:10px;color:#9990a4;margin-top:4px}
-.ly-rewards .ly-avatar{display:grid;place-items:center;width:32px;height:32px;flex:0 0 32px;border-radius:10px;background:linear-gradient(140deg,#eee5ff,#dfd7f8);color:#6838aa;font-size:13px;font-weight:850}
+.ly-rewards .ly-avatar{display:grid;place-items:center;width:32px;height:32px;flex:0 0 32px;border-radius:10px;background:linear-gradient(140deg,#E0F7F3,#dfd7f8);color:#6838aa;font-size:13px;font-weight:850}
 .ly-rewards .ly-person{display:flex;align-items:center;gap:10px;min-width:0}
 .ly-rewards .ly-pill{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:99px;font-size:10px;font-weight:810;white-space:nowrap;border:1px solid #e4dceb;background:#f8f4ff;color:#754db2}
 .ly-rewards .ly-pill:before{content:'';height:6px;width:6px;border-radius:50%;background:currentColor}
