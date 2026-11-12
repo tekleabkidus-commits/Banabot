@@ -20,11 +20,11 @@ for item in SOURCE.iterdir():
 replacements=[
     (r"(?i)your-liyubet-site\\.example","banabot.example"),
     (r"(?i)liyubetbot","Banabot"),
-    (r"(?i)liyubet","Bana Bot"),
-    (r"(?i)kemerbet","Bana Bot"),
+    (r"(?i)liyubet","Bana"),
+    (r"(?i)kemerbet","Bana"),
     (r"(?i)kemerbot","Banabot"),
-    (r"(?i)betnabet","Bana Bot"),
-    (r"(?i)betna","Bana Bot"),
+    (r"(?i)betnabet","Bana"),
+    (r"(?i)betna","Bana"),
 ]
 def brand(content):
     for old,new in replacements:
@@ -60,6 +60,8 @@ for f in ROOT.rglob("*"):
     try: old=f.read_text(encoding="utf-8")
     except UnicodeError: continue
     new=brand(old)
+    # Spaced branding in the admin UI; PHP identifiers and file references stay valid.
+    new=new.replace("'Bana Studio'","'Bana Bot Studio'").replace('"Bana Studio"','"Bana Bot Studio"')
     # Reference paths must follow actual renamed filenames.
     for a,b in [("liyubet-","bana-"),("betna-","bana-"),("kemerbot-","banabot-"),
                 ("LiyubetBot-","Banabot-"),("LIYUBET-","BANA-"),("KEMERBOT-","BANABOT-")]:
@@ -136,7 +138,7 @@ body.fi-body{background:#F3FAFA!important;color:#122D3A!important}
 
 provider=ROOT/"app/Providers/Filament/AdminPanelProvider.php"
 text=provider.read_text()
-text=text.replace("Color::Violet","Color::Teal")
+text=text.replace("Color::Violet","Color::Teal").replace("->brandName('Bana Studio')","->brandName('Bana Bot Studio')")
 text=text.replace("->renderHook('panels::topbar.start'", "->renderHook('panels::topbar.start'")
 # append to the existing group of css links before it terminates
 needle="</link>" # No-op placeholder (actual link HTML is string concatenation)
