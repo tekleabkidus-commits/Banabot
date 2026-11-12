@@ -51,7 +51,9 @@ for entry in sorted(ROOT.rglob("*"),key=lambda x:len(x.parts),reverse=True):
     name=new_path(entry.name)
     if name!=entry.name:
         target=entry.with_name(name)
-        if target.exists(): raise RuntimeError(f"Rename collision: {entry} -> {target}")
+        if target.exists():
+            target=entry.with_name(entry.stem+"-legacy"+entry.suffix)
+            if target.exists(): target=entry.with_name(entry.stem+"-legacy-extra"+entry.suffix)
         entry.rename(target)
 
 # Rebrand text source while leaving vendored compiled assets and binary images/fonts byte-perfect.
@@ -149,10 +151,15 @@ text=text.replace("->renderHook('panels::topbar.start'", "->renderHook('panels::
 # append to the existing group of css links before it terminates
 needle="</link>" # No-op placeholder (actual link HTML is string concatenation)
 idx=text.find("->renderHook('panels::topbar.start'")
+if idx<0: idx=text.find("->renderHook(")
 if idx<0: raise RuntimeError("Panel hook missing")
 # insert a new separate head hook after the first.
 hook="""            ->renderHook('panels::head.end', fn () => new HtmlString('<link rel="stylesheet" href="'.asset('css/bana-identity.css').'?v=20261112bana">'))
 """
 text=text[:idx]+hook+text[idx:]
 provider.write_text(text)
+for folder in ["bootstrap/cache","storage/app","storage/app/public","storage/framework/cache/data","storage/framework/sessions","storage/framework/testing","storage/framework/views","storage/logs"]:
+    p=ROOT/folder
+    p.mkdir(parents=True,exist_ok=True)
+    (p/".gitignore").write_text("*\\n!.gitignore\\n")
 print(f"Imported files, rebranded {count} textual files, recolored theme and appended Bana Bot identity.")
