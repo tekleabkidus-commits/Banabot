@@ -41,7 +41,7 @@ class SettingsSeeder extends Seeder
             'rewards.menu_referral_label' => '🎁 Referral',
             'rewards.menu_support_label' => '💬 Support',
             'welcome.message' => [
-                'en' => "Welcome to Bana, {first_name}! ⚽\nUse the menu below to explore matches, promos and more.",
+                'en' => "Welcome to Bana Bot, {first_name}! ⚽\nUse the menu below to explore matches, promos and more.",
             ],
             'welcome.media_file_id' => null,
             'features' => [

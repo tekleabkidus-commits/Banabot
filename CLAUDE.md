@@ -4,7 +4,7 @@ Banabot is the Bana Telegram Bot Management System — a production marketing sy
 100,000+ Telegram users. Source of truth: `docs/Banabot-SPEC.md` (Spec v2, authoritative).
 Do **not** re-open settled decisions or re-audit the architecture; raise only genuine blockers.
 
-Internal name **Banabot**; every user-facing string is branded **Bana** (your-bana-site.example).
+Internal name **Banabot**; every user-facing string is branded **Bana Bot** (your-bana-site.example).
 
 ## Architectural principles (non-negotiable)
 

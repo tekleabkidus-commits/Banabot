@@ -22,8 +22,8 @@ class MenuSeeder extends Seeder
         $about = MenuItem::query()->create(['action_type' => 'reply', 'position' => 0]);
         $about->translations()->create([
             'lang' => 'en',
-            'label' => 'ℹ️ About Bana',
-            'reply_text' => "Welcome to Bana! Use this bot for information, updates and support.",
+            'label' => 'ℹ️ About Bana Bot',
+            'reply_text' => "Welcome to Bana Bot! Use this bot for information, updates and support.",
         ]);
 
         $invite = MenuItem::query()->create(['action_type' => 'invite', 'position' => 1]);

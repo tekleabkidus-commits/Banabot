@@ -1,6 +1,6 @@
-# Banabot — Bana Telegram Bot Management System
+# Bana Bot — Telegram Bot Management System
 
-A standalone Laravel 12 application containing the official **Bana** Telegram bot
+A standalone Laravel 12 application containing the official **Bana Bot** Telegram bot
 (webhook mode, English-only), a **Filament v4 admin panel** for the marketing team,
 and a **durable queue-based sending engine**. Capacity must be measured against your deployment.
 
