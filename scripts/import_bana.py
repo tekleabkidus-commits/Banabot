@@ -38,6 +38,7 @@ def brand(content):
 
 # Rename paths from deepest first. Separate slug and class aliases to avoid broken filesystem links.
 def new_path(name):
+    if name == "betna-mark.svg": return "bana-legacy-mark.svg"
     s=name
     for a,b in [("LIYUBET","BANA"),("Liyubet","Bana"),("liyubet","bana"),
                 ("KEMERBOT","BANABOT"),("Kemerbot","Banabot"),("kemerbot","banabot"),
