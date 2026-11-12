@@ -10,9 +10,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/integrations/conversions', ConversionController::class)->middleware('throttle:60,1');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', fn () => redirect('/admin'));
 
 Route::post('/telegram/webhook', TelegramWebhookController::class)
     ->middleware(VerifyTelegramWebhookSecret::class)
