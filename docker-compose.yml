@@ -1,0 +1,37 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: banabot-postgres
+    environment:
+      POSTGRES_DB: banabot
+      POSTGRES_USER: banabot
+      POSTGRES_PASSWORD: banabot
+    ports:
+      # 5432/6379 are taken by other local projects on this machine
+      - "127.0.0.1:5445:5432"
+    volumes:
+      - banabot-pgdata:/var/lib/postgresql/data
+      # Creates the extra test database on first boot
+      - ./docker/postgres/init-test-db.sql:/docker-entrypoint-initdb.d/init-test-db.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U banabot -d banabot"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    container_name: banabot-redis
+    ports:
+      - "127.0.0.1:6381:6379"
+    volumes:
+      - banabot-redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  banabot-pgdata:
+  banabot-redisdata:
