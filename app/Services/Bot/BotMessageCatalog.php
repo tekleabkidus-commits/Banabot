@@ -27,7 +27,7 @@ final class BotMessageCatalog
             ],
             'join_gate' => [
                 'group'=>'Onboarding','title'=>'Mandatory join-channel prompt','description'=>'Shown before access when Telegram membership cannot be confirmed.',
-                'text'=>"To use the Bana Bot bot, please join our channel first. 📣\nTap \"Join channel\", then \"I've joined ✅\".",'tokens'=>[],
+                'text'=>"To use Bana Bot, please join our channel first. 📣\nTap \"Join channel\", then \"I've joined ✅\".",'tokens'=>[],
             ],
             'main_menu' => [
                 'group'=>'Onboarding','title'=>'Main menu heading','description'=>'Sent on the Home / Menu button.',

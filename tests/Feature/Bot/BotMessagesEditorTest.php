@@ -47,7 +47,7 @@ it('sends independently edited welcome and a second referral promotion when enab
     expect($sent)->toHaveCount(2)
         ->and($sent[0]['params']['text'])->toContain('Kidus')
         ->and($sent[0]['params']['text'])->toContain('እንኳን')
-        ->and($sent[1]['params']['text'])->toContain('https://t.me/BanabetTestBot?start=ref_'.$user->id);
+        ->and($sent[1]['params']['text'])->toContain('https://t.me/BanaTestBot?start=ref_'.$user->id);
 });
 
 it('sends independent image attachments with each configured message', function () {
