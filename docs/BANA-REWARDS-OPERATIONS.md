@@ -10,7 +10,7 @@
 - 50/100/500 ETB rewards redeemed as **one encrypted, uniquely assigned promo code** per successful withdrawal.
 - Unavailable promo stock means no money is deducted. Tell the user to try again after restocking.
 - Issued codes can be recovered in the user's Withdrawal History and viewed by the Owner after an audited reveal.
-- Promo inventory uploaded from **Excel XLSX or CSV**: column 1 = `code`, optional column 2 = `amount` in ETB. Download the Excel template in **Rewards → Promo Codes**. Rows with malformed codes, sample placeholders, duplicates, or disallowed denominations are skipped.
+- Promo inventory uploaded from **Excel XLSX or CSV**: column 1 = `code`, optional column 2 = `amount` in ETB. Download the Excel template in **Rewards → Promo Codes**. Rows with malformed codes, sample placeholders, duplicates, or disallowed denominations are skipped. Imports now use the Laravel Livewire cloud-safe upload stream, with disposable local files for Excel, 500-code batched database inserts, rollback on failure, and reporting of skipped codes. The maximum is 10 MB and 100,000 non-empty rows; empty formatted rows do not count toward the record limit, but large untrimmed Excel worksheets can still take time to scan. If needed, save a clean CSV with unused rows removed.
 - Backoffice: Referral Reports, Promo Codes, Withdrawal History, Player Wallets, Reward Settings. Financial controls are **Owner-only**.
 
 ## Production rollout (Laravel Cloud)
